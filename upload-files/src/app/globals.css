@@ -11,3 +11,22 @@
 body{
   background-color: #101010;
 }
+
+.show{
+  animation: show 4.5s;
+}
+
+@keyframes show {
+  0%{
+    top: -176px
+  }
+  20%{
+    top: 100px
+  }
+  80%{
+    top: 100px
+  }
+  100%{
+    top: -176px
+  }
+}
