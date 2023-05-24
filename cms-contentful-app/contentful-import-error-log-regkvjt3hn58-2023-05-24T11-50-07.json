@@ -1,0 +1,173 @@
+[
+  {
+    "ts": "2023-05-24T16:50:07.166Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "p5asbbjx1p90"
+            }
+          },
+          "id": "author",
+          "type": "ContentType",
+          "createdAt": "2020-04-22T09:32:50.535Z",
+          "updatedAt": "2020-04-22T09:32:50.885Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 1,
+          "publishedAt": "2020-04-22T09:32:50.885Z",
+          "firstPublishedAt": "2020-04-22T09:32:50.885Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "publishedCounter": 1,
+          "version": 2,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          }
+        },
+        "displayField": "name",
+        "name": "Author",
+        "description": "",
+        "fields": [
+          {
+            "id": "name",
+            "name": "Name",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "picture",
+            "name": "Picture",
+            "type": "Link",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Asset"
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+          "errors": [
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "photo"
+              ]
+            }
+          ],
+          "contentType": {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "regkvjt3hn58"
+                }
+              },
+              "id": "author",
+              "type": "ContentType",
+              "createdAt": "2023-05-24T16:28:40.019Z",
+              "updatedAt": "2023-05-24T16:28:40.019Z",
+              "environment": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Environment",
+                  "id": "6bb7587f-e66c-4f7c-b61d-cd67f2fbde10"
+                }
+              },
+              "revision": 1
+            },
+            "displayField": "EHBNAkQ1oBb2vG1C",
+            "name": "Author",
+            "description": "Authors",
+            "assembly": false,
+            "fields": [
+              {
+                "id": "EHBNAkQ1oBb2vG1C",
+                "apiName": "name",
+                "name": "Name",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "LmkPomvJwpQ8FfHJ",
+                "apiName": "photo",
+                "name": "photo",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Asset"
+              }
+            ]
+          }
+        },
+        "request": {
+          "url": "/spaces/regkvjt3hn58/environments/master/content_types/author",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/7.9.42; feature library-import; sdk contentful-management.js/7.54.2; platform node.js/v16.18.0; os Windows/v16.18.0;",
+            "Authorization": "Bearer ...hbc1w",
+            "user-agent": "node.js/v16.18.0",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 2,
+            "Content-Length": 346
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"name\",\"name\":\"Author\",\"description\":\"\",\"fields\":[{\"id\":\"name\",\"name\":\"Name\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"picture\",\"name\":\"Picture\",\"type\":\"Link\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false,\"linkType\":\"Asset\"}]}"
+        },
+        "requestId": "03c57ad4-c6a6-4e59-8f5a-6586b498a736"
+      }
+    }
+  }
+]
